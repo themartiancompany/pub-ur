@@ -7,8 +7,8 @@ _offline="false"
 _git="false"
 _proj="hip"
 pkgname=pub
-pkgver=0
-_commit="e7db601867b473a87ec739e1c7065b6bf241dd31"
+pkgver="0.0.0.0.0.0.0.0.0.0.0.0.0.1"
+_commit="c5c2cd971b80684f302664b59422bf016589d777"
 pkgrel=1
 _pkgdesc=(
   "Local user repository."
@@ -28,6 +28,8 @@ license=(
 )
 depends=(
   "aspe"
+  "fur"
+  "lur"
   "libcrash-bash"
   "pacman"
 )
@@ -68,7 +70,7 @@ _tarname="${pkgname}-${_tag}"
     _sum='b245547bdcdbfeb09f400305a4b515b6d49635be90f560a39302761fc2688571'
   elif [[ "${_tag_name}" == "commit" ]]; then
     _tar="${_tarname}.zip::${_url}/archive/${_commit}.zip"
-    _sum="267d982435580f20b031539b55d7c668663194830106868f125d824619a873c2"
+    _sum="ce8e8cf99639ce3de344a286f12903ebb9e697e4d24e03abe7ec28acd17ccde4"
   fi && \
     source+=(
       "${_tar}"
