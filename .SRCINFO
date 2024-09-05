@@ -1,6 +1,6 @@
 pkgbase = pub
 	pkgdesc = Local user repository.
-	pkgver = 0.0.0.0.0.0.0.0.0.0.0.0.0.1
+	pkgver = 0.0.0.0.0.0.0.0.0.0.0.0.0.1.1
 	pkgrel = 1
 	url = https://github.com/themartiancompany/pub
 	arch = any
@@ -11,7 +11,7 @@ pkgbase = pub
 	depends = lur
 	depends = libcrash-bash
 	depends = pacman
-	source = pub-c5c2cd971b80684f302664b59422bf016589d777.zip::https://github.com/themartiancompany/pub/archive/c5c2cd971b80684f302664b59422bf016589d777.zip
-	sha256sums = ce8e8cf99639ce3de344a286f12903ebb9e697e4d24e03abe7ec28acd17ccde4
+	source = pub-af92c7bb2ea19da4bdb9e2808f0d3a9bbf534361.zip::https://github.com/themartiancompany/pub/archive/af92c7bb2ea19da4bdb9e2808f0d3a9bbf534361.zip
+	sha256sums = 9c08c43c6034df98725fadbe1dfd7cca41587f5dd2e77ea096c777aee11df57d
 
 pkgname = pub
