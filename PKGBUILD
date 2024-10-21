@@ -7,8 +7,8 @@ _offline="false"
 _git="false"
 _proj="hip"
 pkgname=pub
-pkgver="0.0.0.0.0.0.0.0.0.0.0.0.0.1.1"
-_commit="af92c7bb2ea19da4bdb9e2808f0d3a9bbf534361"
+pkgver="0.0.0.0.0.0.0.0.0.0.0.0.0.1.1.1"
+_commit="408ce5b44fd1d08d56b3df01ab22ebac08fee44c"
 pkgrel=1
 _pkgdesc=(
   "Local user repository."
@@ -102,4 +102,3 @@ package() {
 }
 
 # vim: ft=sh syn=sh et
-408ce5b44fd1d08d56b3df01ab22ebac08fee44c
