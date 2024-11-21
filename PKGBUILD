@@ -7,8 +7,8 @@ _offline="false"
 _git="false"
 _proj="hip"
 pkgname=pub
-pkgver="0.0.0.0.0.0.0.0.0.0.0.0.0.1.1.1"
-_commit="408ce5b44fd1d08d56b3df01ab22ebac08fee44c"
+pkgver="0.0.0.0.0.0.0.0.0.0.0.0.0.1.1.1.1.1"
+_commit="0abf4e749457c89aae55393ac914df0be14f905f"
 pkgrel=1
 _pkgdesc=(
   "Local user repository."
@@ -75,7 +75,7 @@ _tarname="${pkgname}-${_tag}"
     _sum='b245547bdcdbfeb09f400305a4b515b6d49635be90f560a39302761fc2688571'
   elif [[ "${_tag_name}" == "commit" ]]; then
     _tar="${_tarname}.zip::${_url}/archive/${_commit}.zip"
-    _sum="9c08c43c6034df98725fadbe1dfd7cca41587f5dd2e77ea096c777aee11df57d"
+    _sum='2ace35be34e8fa7ed6cb2382ec3880c678ddae3c5c85561ec6e52fd5feb36bbc'
   fi && \
     source+=(
       "${_tar}"
