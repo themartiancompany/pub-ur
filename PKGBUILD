@@ -34,6 +34,7 @@ depends=(
   "gpg-key-info"
   "lur"
   "libcrash-bash"
+  "rsync"
   "ur-contracts"
 )
 _os="$( \
