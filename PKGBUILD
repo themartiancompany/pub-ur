@@ -94,7 +94,7 @@ _evmfs_uri="evmfs://${_evmfs_network}/${_evmfs_address}/${_evmfs_ns}/${_evmfs_su
 _evmfs_src="${_tarname}.zip::${_evmfs_uri}"
 _evmfs_sig_sum="67dbc17ea8c6304d50d4103f36e401e3c3cb0e2f47e319c0f680960c5afeae17"
 _evmfs_sig_uri="evmfs://${_evmfs_network}/${_evmfs_address}/${_evmfs_ns}/${_evmfs_sig_sum}"
-_evmfs_sig_src="${_tarname}.zip.sig::${_evmfs_uri}"
+_evmfs_sig_src="${_tarname}.zip.sig::${_evmfs_sig_uri}"
 if [[ "${_evmfs}" == true ]]; then
   makedepends+=(
     "evmfs"
