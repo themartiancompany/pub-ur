@@ -90,10 +90,10 @@ _evmfs_network="100"
 _evmfs_address="0x69470b18f8b8b5f92b48f6199dcb147b4be96571"
 _evmfs_ns="0x6E5163fC4BFc1511Dbe06bB605cc14a3e462332b"
 _evmfs_sum='6835202b2217a244c8660fc8d6fad12fd4800cd39bbfe9f112be5b5332f16182'
-_evmfs_uri="evmfs://${_evmfs_network}/${_evmfs_ns}/${_evmfs_sum}"
+_evmfs_uri="evmfs://${_evmfs_network}/${_evmfs_address}/${_evmfs_ns}/${_evmfs_sum}"
 _evmfs_src="${_tarname}.zip::${_evmfs_uri}"
 _evmfs_sig_sum="67dbc17ea8c6304d50d4103f36e401e3c3cb0e2f47e319c0f680960c5afeae17"
-_evmfs_sig_uri="evmfs://${_evmfs_network}/${_evmfs_ns}/${_evmfs_sig_sum}"
+_evmfs_sig_uri="evmfs://${_evmfs_network}/${_evmfs_address}/${_evmfs_ns}/${_evmfs_sig_sum}"
 _evmfs_sig_src="${_tarname}.zip.sig::${_evmfs_uri}"
 if [[ "${_evmfs}" == true ]]; then
   makedepends+=(
