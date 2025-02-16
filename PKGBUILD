@@ -31,6 +31,7 @@ _offline="false"
 _evmfs="true"
 _git="false"
 _proj="hip"
+_py="python"
 pkgname=pub
 pkgver="0.0.0.0.0.0.0.0.0.0.0.0.1.1"
 _commit="5a363e8195f654675a417d7080c1fda3deb41b68"
@@ -53,6 +54,7 @@ license=(
 )
 depends=(
   "aspe"
+  "evm-gnupg"
   "fur"
   "git"
   "gnupg"
@@ -71,6 +73,7 @@ if [[ "${_os}" != "GNU/Linux" ]] && \
 fi
 makedepends=(
   'make'
+  "${_py}-docutils"
 )
 checkdepends=(
   "shellcheck"
