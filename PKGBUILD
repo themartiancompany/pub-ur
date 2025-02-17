@@ -40,7 +40,6 @@ if [[ ! -v "_evmfs" ]]; then
   fi
 fi
 _offline="false"
-_evmfs="true"
 _git="false"
 _proj="hip"
 _py="python"
