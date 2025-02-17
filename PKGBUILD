@@ -106,7 +106,7 @@ _evmfs_ns="0x6E5163fC4BFc1511Dbe06bB605cc14a3e462332b"
 _evmfs_sum='6835202b2217a244c8660fc8d6fad12fd4800cd39bbfe9f112be5b5332f16182'
 _evmfs_uri="evmfs://${_evmfs_network}/${_evmfs_address}/${_evmfs_ns}/${_evmfs_sum}"
 _evmfs_src="${_tarname}.zip::${_evmfs_uri}"
-_evmfs_sig_sum="67dbc17ea8c6304d50d4103f36e401e3c3cb0e2f47e319c0f680960c5afeae17"
+_evmfs_sig_sum="70faf7571a1d2b41703f151f392e68f0584e51a3769656581dc10bcfdf922a16"
 _evmfs_sig_uri="evmfs://${_evmfs_network}/${_evmfs_address}/${_evmfs_ns}/${_evmfs_sig_sum}"
 _evmfs_sig_src="${_tarname}.zip.sig::${_evmfs_sig_uri}"
 if [[ "${_evmfs}" == true ]]; then
@@ -127,12 +127,6 @@ elif [[ "${_git}" == true ]]; then
   )
   _src="${_tarname}::git+${_url}#${_tag_name}=${_tag}?signed"
   _sum="SKIP"
-  validpgpkeys+=(
-    # Truocolo <truocolo@aol.com>
-    '97E989E6CF1D2C7F7A41FF9F95684DBE23D6A3E9'
-    # Truocolo <truocolo@0x6E5163fC4BFc1511Dbe06bB605cc14a3e462332b>
-    'F690CBC17BD1F53557290AF51FC17D540D0ADEED'
-  )
 elif [[ "${_git}" == false ]]; then
   if [[ "${_tag_name}" == 'pkgver' ]]; then
     _src="${_tarname}.tar.gz::${_url}/archive/refs/tags/${_tag}.tar.gz"
@@ -147,6 +141,14 @@ source+=(
 )
 sha256sums+=(
   "${_sum}"
+)
+validpgpkeys+=(
+  # Truocolo <truocolo@aol.com>
+  '97E989E6CF1D2C7F7A41FF9F95684DBE23D6A3E9'
+  # Truocolo <truocolo@0x6E5163fC4BFc1511Dbe06bB605cc14a3e462332b>
+  'F690CBC17BD1F53557290AF51FC17D540D0ADEED'
+  # Pellegrino Prevete (dvorak) <dvorak@0x87003Bd6C074C713783df04f36517451fF34CBEf>
+  '12D8E3D7888F741E89F86EE0FEC8567A644F1D16'
 )
 
 check() {
